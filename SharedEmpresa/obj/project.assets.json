@@ -1660,11 +1660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduna\\source\\repos\\SharedEmpresa\\SharedEmpresa\\SharedEmpresa.csproj",
+      "projectUniqueName": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\SharedEmpresa.csproj",
       "projectName": "SharedEmpresa",
-      "projectPath": "C:\\Users\\eduna\\source\\repos\\SharedEmpresa\\SharedEmpresa\\SharedEmpresa.csproj",
+      "projectPath": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\SharedEmpresa.csproj",
       "packagesPath": "C:\\Users\\eduna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduna\\source\\repos\\SharedEmpresa\\SharedEmpresa\\obj\\",
+      "outputPath": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

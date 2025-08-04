@@ -35,3 +35,17 @@ C:\Users\eduna\source\repos\SharedEmpresa\SharedEmpresa\obj\Debug\net8.0-windows
 C:\Users\eduna\source\repos\SharedEmpresa\SharedEmpresa\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
 C:\Users\eduna\source\repos\SharedEmpresa\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.FrmMenu.resources
 C:\Users\eduna\source\repos\SharedEmpresa\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.Login.resources
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.csproj.AssemblyReference.cache
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.Form1.resources
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.FrmMenu.resources
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.FrmProduto.resources
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.Login.resources
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.csproj.GenerateResource.cache
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.AssemblyInfoInputs.cache
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.AssemblyInfo.cs
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.csproj.CoreCompileInputs.cache
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.sourcelink.json
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.dll
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\refint\SharedEmpresa.dll
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.pdb
