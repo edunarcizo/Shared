@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,23 +34,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FrmMenu.cs",
+              "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs",
+              "RelativeDocumentMoniker": "SharedEmpresa\\FrmMenu.cs",
+              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs",
+              "RelativeToolTip": "SharedEmpresa\\FrmMenu.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwCUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T12:14:45.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Login.cs",
+              "RelativeDocumentMoniker": "SharedEmpresa\\Login.cs",
+              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Login.cs",
+              "RelativeToolTip": "SharedEmpresa\\Login.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAawDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T12:07:39.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmMenu.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs",
+              "RelativeDocumentMoniker": "SharedEmpresa\\FrmMenu.cs",
+              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs [Projeto]",
+              "RelativeToolTip": "SharedEmpresa\\FrmMenu.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T12:03:58.212Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SessaoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\SessaoUsuario.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\SessaoUsuario.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\SessaoUsuario.cs",
               "RelativeToolTip": "SharedEmpresa\\SessaoUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAvwAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:22:36.937Z"
+              "WhenOpened": "2025-08-04T11:22:36.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Program.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Program.cs",
@@ -54,27 +101,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Login.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Login.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Login.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Login.cs [Projeto]",
               "RelativeToolTip": "SharedEmpresa\\Login.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:22:33.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmMenu.cs",
-              "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs",
-              "RelativeDocumentMoniker": "SharedEmpresa\\FrmMenu.cs",
-              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs",
-              "RelativeToolTip": "SharedEmpresa\\FrmMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:22:26.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T11:22:33.941Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

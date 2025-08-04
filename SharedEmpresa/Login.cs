@@ -59,7 +59,7 @@ namespace SharedEmpresa
                     {
                         if (BCrypt.Net.BCrypt.Verify(txtSenha.Text, senha))
                         {
-                            MessageBox.Show("Bem-vindo, {SessaoUsuario.UsuarioLogado} ");
+                            MessageBox.Show($"Bem-vindo, {SessaoUsuario.usuarioLogado} ");
                             FrmMenu principal = new FrmMenu();
                             principal.Show();
                         }
