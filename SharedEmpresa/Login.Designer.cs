@@ -101,6 +101,7 @@
             Controls.Add(Email);
             Name = "Login";
             Text = "Login";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
             PerformLayout();
         }

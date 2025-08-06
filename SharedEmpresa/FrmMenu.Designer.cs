@@ -60,14 +60,14 @@
             // usuarioToolStripMenuItem
             // 
             usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            usuarioToolStripMenuItem.Size = new Size(180, 22);
+            usuarioToolStripMenuItem.Size = new Size(117, 22);
             usuarioToolStripMenuItem.Text = "Usuario";
             usuarioToolStripMenuItem.Click += usuarioToolStripMenuItem_Click;
             // 
             // produtoToolStripMenuItem
             // 
             produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            produtoToolStripMenuItem.Size = new Size(180, 22);
+            produtoToolStripMenuItem.Size = new Size(117, 22);
             produtoToolStripMenuItem.Text = "Produto";
             produtoToolStripMenuItem.Click += produtoToolStripMenuItem_Click_1;
             // 
@@ -103,6 +103,7 @@
             MainMenuStrip = menuStrip1;
             Name = "FrmMenu";
             Text = "FrmMenu";
+            WindowState = FormWindowState.Maximized;
             Load += FrmMenu_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

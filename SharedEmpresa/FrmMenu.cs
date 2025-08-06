@@ -20,8 +20,21 @@ namespace SharedEmpresa
 
         private void FrmMenu_Load(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = SessaoUsuario.usuarioLogado;
-            toolStripStatusLabel2.Text = SessaoUsuario.cargoUsuario.ToString();
+            toolStripStatusLabel1.Text = $"Nome: {SessaoUsuario.usuarioLogado}";
+
+            if (SessaoUsuario.cargoUsuario == 3)
+            {
+                toolStripStatusLabel2.Text = "Cargo: Dono";
+            }
+            if(SessaoUsuario.cargoUsuario == 2)
+            {
+                toolStripStatusLabel2.Text = "Cargo: Assistente";
+            }
+            if (SessaoUsuario.cargoUsuario == 1)
+            {
+                toolStripStatusLabel2.Text = "Cargo: Moderador";
+            }
+
         }
 
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,5 +50,7 @@ namespace SharedEmpresa
             produto.MdiParent = this;
             produto.Show();
         }
+
+        
     }
 }

@@ -165,9 +165,9 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(76, 253);
+            dataGridView1.Location = new Point(54, 253);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(612, 150);
+            dataGridView1.Size = new Size(689, 150);
             dataGridView1.TabIndex = 13;
             // 
             // cboCargo
@@ -221,6 +221,8 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
