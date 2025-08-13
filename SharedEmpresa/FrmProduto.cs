@@ -58,11 +58,34 @@ namespace SharedEmpresa
             OpenFileDialog foto = new OpenFileDialog();
 
             foto.Filter = "Image file(*.jpg;*.png)|*jpg;*.png";
+            foto.Title = "Selecione uma foto";
             if (foto.ShowDialog() == DialogResult.OK)
             {
                 Image arquivo = Image.FromFile(foto.FileName);
-                pictureBox1.Image = arquivo;
-                lblfoto.Text = foto.FileName;
+                
+                string CaminhoCompleto = foto.FileName;
+                string nomeArquivo = Path.GetFileName(CaminhoCompleto);
+                string caminhoDestino = Path.Combine(Application.StartupPath, "Produto", nomeArquivo);
+                
+                if (!Directory.Exists(caminhoDestino))
+                {
+                    Directory.CreateDirectory(caminhoDestino);
+                }
+
+                string caminhoFinal = Path.Combine(caminhoDestino, nomeArquivo);
+                try
+                {
+                    File.Copy(CaminhoCompleto, caminhoFinal, true); 
+                    lblfoto.Text = caminhoFinal;
+                    pictureBox1.Image = arquivo;
+                    lblfoto.Text = foto.FileName;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao copiar a foto: " + ex.Message);
+                    lblfoto.Text = "";          
+                }   
+
             }
 
         }

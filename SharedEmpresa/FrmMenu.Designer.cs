@@ -37,13 +37,15 @@
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
+            pedidoToolStripMenuItem = new ToolStripMenuItem();
+            adicionarToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrarToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrarToolStripMenuItem, pedidoToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -92,6 +94,20 @@
             toolStripStatusLabel2.Size = new Size(118, 17);
             toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
+            // pedidoToolStripMenuItem
+            // 
+            pedidoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { adicionarToolStripMenuItem });
+            pedidoToolStripMenuItem.Name = "pedidoToolStripMenuItem";
+            pedidoToolStripMenuItem.Size = new Size(56, 20);
+            pedidoToolStripMenuItem.Text = "Pedido";
+            // 
+            // adicionarToolStripMenuItem
+            // 
+            adicionarToolStripMenuItem.Name = "adicionarToolStripMenuItem";
+            adicionarToolStripMenuItem.Size = new Size(180, 22);
+            adicionarToolStripMenuItem.Text = "Adicionar";
+            adicionarToolStripMenuItem.Click += adicionarToolStripMenuItem_Click;
+            // 
             // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -123,5 +139,7 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel toolStripStatusLabel2;
+        private ToolStripMenuItem pedidoToolStripMenuItem;
+        private ToolStripMenuItem adicionarToolStripMenuItem;
     }
 }

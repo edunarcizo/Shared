@@ -74,3 +74,5 @@ C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\bin\Debug\net8.0-
 C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEm.2D5A2FFB.Up2Date
 C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.genruntimeconfig.cache
 C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\ref\SharedEmpresa.dll
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.Pedido.resources
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.Carrinho.resources

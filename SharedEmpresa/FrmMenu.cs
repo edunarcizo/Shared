@@ -26,13 +26,40 @@ namespace SharedEmpresa
             {
                 toolStripStatusLabel2.Text = "Cargo: Dono";
             }
-            if(SessaoUsuario.cargoUsuario == 2)
+            if (SessaoUsuario.cargoUsuario == 2)
             {
-                toolStripStatusLabel2.Text = "Cargo: Assistente";
+                toolStripStatusLabel2.Text = "Cargo: Vendedor";
             }
             if (SessaoUsuario.cargoUsuario == 1)
             {
                 toolStripStatusLabel2.Text = "Cargo: Moderador";
+            }
+            int cargo = SessaoUsuario.cargoUsuario;
+            switch (cargo)
+            {
+                case 1: // Moderador
+                    usuarioToolStripMenuItem.Visible = false;
+                    produtoToolStripMenuItem.Visible = true;
+                    break;
+
+                case 2: // Vendedor
+                    usuarioToolStripMenuItem.Visible = false;
+                    produtoToolStripMenuItem.Visible = false;
+
+                    break;
+
+
+                case 3: // Dono
+
+                    usuarioToolStripMenuItem.Visible = true;
+                    produtoToolStripMenuItem.Visible = true;
+
+                    break;
+
+                default:
+                    MessageBox.Show("Cargo não reconhecido.");
+                    this.Close();
+                    break;
             }
 
         }
@@ -51,6 +78,11 @@ namespace SharedEmpresa
             produto.Show();
         }
 
-        
+        private void adicionarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pedido pedido = new Pedido();
+            pedido.MdiParent = this;
+            pedido.Show();
+        }
     }
 }
