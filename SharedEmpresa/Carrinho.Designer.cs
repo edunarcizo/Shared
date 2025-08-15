@@ -31,6 +31,8 @@
             btnVoltar = new Button();
             btnFinalizar = new Button();
             dataGridViewCarrinho = new DataGridView();
+            lblTotal = new Label();
+            cboFormaPagamento = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).BeginInit();
             SuspendLayout();
             // 
@@ -52,6 +54,7 @@
             btnFinalizar.TabIndex = 1;
             btnFinalizar.Text = "Finalizar";
             btnFinalizar.UseVisualStyleBackColor = true;
+            btnFinalizar.Click += btnFinalizar_Click;
             // 
             // dataGridViewCarrinho
             // 
@@ -61,18 +64,39 @@
             dataGridViewCarrinho.Size = new Size(703, 292);
             dataGridViewCarrinho.TabIndex = 2;
             // 
+            // lblTotal
+            // 
+            lblTotal.AutoSize = true;
+            lblTotal.Location = new Point(53, 352);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(36, 15);
+            lblTotal.TabIndex = 3;
+            lblTotal.Text = "Total:";
+            // 
+            // cboFormaPagamento
+            // 
+            cboFormaPagamento.FormattingEnabled = true;
+            cboFormaPagamento.Location = new Point(57, 381);
+            cboFormaPagamento.Name = "cboFormaPagamento";
+            cboFormaPagamento.Size = new Size(121, 23);
+            cboFormaPagamento.TabIndex = 4;
+            // 
             // Carrinho
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cboFormaPagamento);
+            Controls.Add(lblTotal);
             Controls.Add(dataGridViewCarrinho);
             Controls.Add(btnFinalizar);
             Controls.Add(btnVoltar);
             Name = "Carrinho";
             Text = "Carrinho";
+            Load += Carrinho_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -80,5 +104,7 @@
         private Button btnVoltar;
         private Button btnFinalizar;
         private DataGridView dataGridViewCarrinho;
+        private Label lblTotal;
+        private ComboBox cboFormaPagamento;
     }
 }
