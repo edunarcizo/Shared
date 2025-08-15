@@ -21,21 +21,11 @@ create table produto(
 codigoProduto int primary key auto_increment,
 nome varchar(50),
 descricao varchar (200),
-valor decimal(5,2),
+valor decimal(10,2),
 quantidade int,
 foto varchar(100)
 );
-
-create table cliente(
-codigoCliente int primary key auto_increment,
-nome varchar(100),
-endereco  varchar(200),
-cep int,
-cpf int,
-senha varchar(255),
-email varchar(100),
-telefone varchar(20)
-);
+select * from produto;
 
 create table pedido(
 codigoPedido int primary key auto_increment,
@@ -43,12 +33,13 @@ formaPagamento varchar(100),
 dataEntrega datetime,
 codigoCliente int,
 dataPedido datetime,
-constraint fk_usuario foreign key (codigoCliente) references cliente(codigoCliente)
+constraint fk_usuario foreign key (codigo) references usuario(codigo)
 );
 
-create table itensProduto(
+create table itensPedido(
 codigoProduto int,
 codigoPedido int,
+primary key (codigoPedido, codigoProduto),
 quantidadeDoProduto int,
 constraint fk_pedido foreign key (codigoPedido) references pedido(codigoPedido),
 constraint fk_produto foreign key (codigoProduto) references produto(codigoProduto)
@@ -57,3 +48,4 @@ constraint fk_produto foreign key (codigoProduto) references produto(codigoProdu
 insert into cargo(cargo) value("moderador");
 insert into cargo(cargo) value("assistente");
 insert into cargo(cargo) value("dono");
+insert into cargo(cargo) value("usuário");

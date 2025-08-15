@@ -36,6 +36,7 @@
             label1 = new Label();
             btnAdicionar = new Button();
             btnVerCarrinho = new Button();
+            lblIdProduto = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -111,11 +112,21 @@
             btnVerCarrinho.UseVisualStyleBackColor = true;
             btnVerCarrinho.Click += btnVerCarrinho_Click;
             // 
+            // lblIdProduto
+            // 
+            lblIdProduto.AutoSize = true;
+            lblIdProduto.Location = new Point(731, 27);
+            lblIdProduto.Name = "lblIdProduto";
+            lblIdProduto.Size = new Size(38, 15);
+            lblIdProduto.TabIndex = 8;
+            lblIdProduto.Text = "label2";
+            // 
             // Pedido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblIdProduto);
             Controls.Add(btnVerCarrinho);
             Controls.Add(btnAdicionar);
             Controls.Add(label1);
@@ -142,5 +153,6 @@
         private Label label1;
         private Button btnAdicionar;
         private Button btnVerCarrinho;
+        private Label lblIdProduto;
     }
 }

@@ -28,12 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Carrinho";
+            btnVoltar = new Button();
+            btnFinalizar = new Button();
+            dataGridViewCarrinho = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).BeginInit();
+            SuspendLayout();
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(599, 415);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(75, 23);
+            btnVoltar.TabIndex = 0;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
+            // btnFinalizar
+            // 
+            btnFinalizar.Location = new Point(698, 415);
+            btnFinalizar.Name = "btnFinalizar";
+            btnFinalizar.Size = new Size(75, 23);
+            btnFinalizar.TabIndex = 1;
+            btnFinalizar.Text = "Finalizar";
+            btnFinalizar.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewCarrinho
+            // 
+            dataGridViewCarrinho.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCarrinho.Location = new Point(42, 42);
+            dataGridViewCarrinho.Name = "dataGridViewCarrinho";
+            dataGridViewCarrinho.Size = new Size(703, 292);
+            dataGridViewCarrinho.TabIndex = 2;
+            // 
+            // Carrinho
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dataGridViewCarrinho);
+            Controls.Add(btnFinalizar);
+            Controls.Add(btnVoltar);
+            Name = "Carrinho";
+            Text = "Carrinho";
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnVoltar;
+        private Button btnFinalizar;
+        private DataGridView dataGridViewCarrinho;
     }
 }
