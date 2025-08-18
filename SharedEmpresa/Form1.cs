@@ -12,9 +12,62 @@ namespace SharedEmpresa
             InitializeComponent();
         }
 
+        private void AtualiarGrid()
+        {
+            try
+            {
+                dataGridView1.DataSource = obterdados("SELECT * FROM usuario");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao atualizar a grid: " + ex.Message);
+            }
+        }
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                string conexaoStr = "datasource=localhost;username=root;password='';database=projeto";
+                using (MySqlConnection conexao = new MySqlConnection(conexaoStr))
+                {
+                    conexao.Open();
+                    
+                    string sql = "SELECT * FROM usuario WHERE 1=1";
+                    if (!string.IsNullOrEmpty(txtCodigo.Text))
+                        sql += " AND codigo = @codigo";
+                    if (!string.IsNullOrEmpty(txtEmail.Text))
+                        sql += " AND email LIKE @email";
+                    
+                    MySqlCommand comando = new MySqlCommand(sql, conexao);
+                    if (!string.IsNullOrEmpty(txtCodigo.Text))
+                        comando.Parameters.AddWithValue("@codigo", Convert.ToInt32(txtCodigo.Text));
+                    if (!string.IsNullOrEmpty(txtEmail.Text))
+                        comando.Parameters.AddWithValue("@email", "%" + txtEmail.Text.Trim() + "%");
+                    
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                    if (dt.Rows.Count > 0)
+                    {
+                        DataRow row = dt.Rows[0];
+                        txtCodigo.Text = row["codigo"].ToString();
+                        txtNome.Text = row["nome"].ToString();
+                        txtEmail.Text = row["email"].ToString();
+                        txtSenha.Text = row["senha"].ToString();
+                        cboCargo.SelectedValue = Convert.ToInt32(row["cargo"]);
+                        chkAtivo.Checked = Convert.ToBoolean(row["ativo"]);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nenhum usuário encontrado com os critérios informados.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
@@ -41,6 +94,7 @@ namespace SharedEmpresa
 
                 if (comando.ExecuteNonQuery() == 1)
                 {
+                    AtualiarGrid();
                     MessageBox.Show("Cadastro realizado com sucesso!");
                 }
                 else
@@ -94,6 +148,7 @@ namespace SharedEmpresa
 
                 if (comando.ExecuteNonQuery() == 1)
                 {
+                    AtualiarGrid();
                     MessageBox.Show("Mudança realizada com sucesso!");
                 }
                 else
@@ -129,6 +184,7 @@ namespace SharedEmpresa
 
                     if (comando.ExecuteNonQuery() == 1)
                     {
+                        AtualiarGrid();
                         MessageBox.Show("Usuário excluído com sucesso!");
                     }
                     else

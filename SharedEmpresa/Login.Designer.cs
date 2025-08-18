@@ -32,8 +32,9 @@
             label2 = new Label();
             txtEmail = new TextBox();
             txtSenha = new TextBox();
-            label1 = new Label();
             btnLogar = new Button();
+            label12 = new Label();
+            chkMostrarSenha = new CheckBox();
             SuspendLayout();
             // 
             // Email
@@ -65,18 +66,8 @@
             // 
             txtSenha.Location = new Point(109, 65);
             txtSenha.Name = "txtSenha";
-            txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(100, 23);
             txtSenha.TabIndex = 3;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(51, 112);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 5;
-            label1.Text = "label1";
             // 
             // btnLogar
             // 
@@ -88,13 +79,33 @@
             btnLogar.UseVisualStyleBackColor = true;
             btnLogar.Click += btnLogar_Click;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(51, 108);
+            label12.Name = "label12";
+            label12.Size = new Size(0, 15);
+            label12.TabIndex = 7;
+            // 
+            // chkMostrarSenha
+            // 
+            chkMostrarSenha.AutoSize = true;
+            chkMostrarSenha.Location = new Point(226, 68);
+            chkMostrarSenha.Name = "chkMostrarSenha";
+            chkMostrarSenha.Size = new Size(101, 19);
+            chkMostrarSenha.TabIndex = 8;
+            chkMostrarSenha.Text = "Mostrar senha";
+            chkMostrarSenha.UseVisualStyleBackColor = true;
+            chkMostrarSenha.CheckedChanged += chkMostrarSenha_CheckedChanged_1;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(chkMostrarSenha);
+            Controls.Add(label12);
             Controls.Add(btnLogar);
-            Controls.Add(label1);
             Controls.Add(txtSenha);
             Controls.Add(txtEmail);
             Controls.Add(label2);
@@ -112,7 +123,8 @@
         private Label label2;
         private TextBox txtEmail;
         private TextBox txtSenha;
-        private Label label1;
         private Button btnLogar;
+        private Label label12;
+        private CheckBox chkMostrarSenha;
     }
 }
