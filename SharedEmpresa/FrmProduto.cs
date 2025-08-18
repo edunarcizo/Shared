@@ -62,11 +62,11 @@ namespace SharedEmpresa
             if (foto.ShowDialog() == DialogResult.OK)
             {
                 Image arquivo = Image.FromFile(foto.FileName);
-                
+
                 string CaminhoCompleto = foto.FileName;
                 string nomeArquivo = Path.GetFileName(CaminhoCompleto);
                 string caminhoDestino = Path.Combine(Application.StartupPath, "Produto", nomeArquivo);
-                
+
                 if (!Directory.Exists(caminhoDestino))
                 {
                     Directory.CreateDirectory(caminhoDestino);
@@ -75,7 +75,7 @@ namespace SharedEmpresa
                 string caminhoFinal = Path.Combine(caminhoDestino, nomeArquivo);
                 try
                 {
-                    File.Copy(CaminhoCompleto, caminhoFinal, true); 
+                    File.Copy(CaminhoCompleto, caminhoFinal, true);
                     lblfoto.Text = caminhoFinal;
                     pictureBox1.Image = arquivo;
                     lblfoto.Text = foto.FileName;
@@ -83,8 +83,8 @@ namespace SharedEmpresa
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao copiar a foto: " + ex.Message);
-                    lblfoto.Text = "";          
-                }   
+                    lblfoto.Text = "";
+                }
 
             }
 
@@ -96,7 +96,7 @@ namespace SharedEmpresa
             {
                 string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                 conexao = new MySqlConnection(data_source);
-                string sql = "update produto set nome=@nome,descricao=@descricao,valor=@valor,quantidade=@quantidade,foto=@foto where codidgoProduto=@codigoProduto";
+                string sql = "update produto set nome=@nome,descricao=@descricao,valor=@valor,quantidade=@quantidade,foto=@foto where codigoProduto=@codigoProduto";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                 comando.Parameters.AddWithValue("@codigoProduto", Convert.ToInt32(txtID.Text));
@@ -170,6 +170,62 @@ namespace SharedEmpresa
         {
             pictureBox1.Image = null;
             lblfoto.Text = "";
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtID.Text))
+                {
+                    MessageBox.Show("Por favor, informe o código do produto.");
+                    return;
+                }
+                string data_source = "datasource=localhost; username=root; password=''; database=projeto ";
+                using (MySqlConnection conexao = new MySqlConnection(data_source))
+                {
+                    string sql = "SELECT * FROM produto WHERE codigoProduto=@codigoProduto";
+                    using (MySqlCommand comando = new MySqlCommand(sql, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@codigoProduto", Convert.ToInt32(txtID.Text));
+                        conexao.Open();
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Preenche os campos do formulário
+                                txtNome.Text = reader["nome"].ToString();
+                                txtDescricao.Text = reader["descricao"].ToString();
+                                txtValor.Text = reader["valor"].ToString();
+                                txtQuantidade.Text = reader["quantidade"].ToString();
+                                lblfoto.Text = reader["foto"].ToString();
+                                // Se houver foto salva, mostra no PictureBox
+                                if (!string.IsNullOrEmpty(lblfoto.Text) && System.IO.File.Exists(lblfoto.Text))
+                                {
+                                    pictureBox1.Image = Image.FromFile(lblfoto.Text);
+                                }
+                                else
+                                {
+                                    pictureBox1.Image = null;
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Produto não encontrado!");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

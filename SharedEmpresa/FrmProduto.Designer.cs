@@ -45,13 +45,12 @@
             btnAdicionarFoto = new Button();
             btnExcluirFoto = new Button();
             lblfoto = new Label();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            btnPesquisar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Location = new Point(24, 58);
             label1.Name = "label1";
@@ -61,7 +60,6 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Location = new Point(24, 91);
             label2.Name = "label2";
@@ -71,7 +69,6 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Location = new Point(24, 126);
             label3.Name = "label3";
@@ -81,7 +78,6 @@
             // 
             // txtNome
             // 
-            txtNome.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             txtNome.Location = new Point(113, 58);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(100, 23);
@@ -89,7 +85,6 @@
             // 
             // txtDescricao
             // 
-            txtDescricao.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             txtDescricao.Location = new Point(113, 91);
             txtDescricao.Name = "txtDescricao";
             txtDescricao.Size = new Size(100, 23);
@@ -97,7 +92,6 @@
             // 
             // txtValor
             // 
-            txtValor.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             txtValor.Location = new Point(113, 126);
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(100, 23);
@@ -105,7 +99,6 @@
             // 
             // label4
             // 
-            label4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Location = new Point(24, 161);
             label4.Name = "label4";
@@ -115,7 +108,6 @@
             // 
             // txtQuantidade
             // 
-            txtQuantidade.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             txtQuantidade.Location = new Point(113, 161);
             txtQuantidade.Name = "txtQuantidade";
             txtQuantidade.Size = new Size(100, 23);
@@ -123,7 +115,6 @@
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Location = new Point(24, 26);
             label5.Name = "label5";
@@ -133,15 +124,14 @@
             // 
             // txtID
             // 
-            txtID.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             txtID.Location = new Point(113, 18);
             txtID.Name = "txtID";
             txtID.Size = new Size(100, 23);
             txtID.TabIndex = 9;
+            txtID.TextChanged += txtID_TextChanged;
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             pictureBox1.Location = new Point(419, 18);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(294, 194);
@@ -150,7 +140,6 @@
             // 
             // btnCadastrar
             // 
-            btnCadastrar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnCadastrar.AutoSize = true;
             btnCadastrar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnCadastrar.Location = new Point(24, 380);
@@ -163,7 +152,6 @@
             // 
             // btnEditar
             // 
-            btnEditar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnEditar.Location = new Point(113, 380);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(47, 25);
@@ -174,7 +162,6 @@
             // 
             // btnExcluirProduto
             // 
-            btnExcluirProduto.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnExcluirProduto.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnExcluirProduto.Location = new Point(203, 380);
             btnExcluirProduto.Name = "btnExcluirProduto";
@@ -186,7 +173,6 @@
             // 
             // btnAdicionarFoto
             // 
-            btnAdicionarFoto.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnAdicionarFoto.AutoSize = true;
             btnAdicionarFoto.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnAdicionarFoto.Location = new Point(442, 250);
@@ -199,7 +185,6 @@
             // 
             // btnExcluirFoto
             // 
-            btnExcluirFoto.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnExcluirFoto.AutoSize = true;
             btnExcluirFoto.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             btnExcluirFoto.Location = new Point(587, 250);
@@ -218,13 +203,15 @@
             lblfoto.Size = new Size(0, 15);
             lblfoto.TabIndex = 16;
             // 
-            // flowLayoutPanel1
+            // btnPesquisar
             // 
-            flowLayoutPanel1.Location = new Point(0, -1);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(799, 452);
-            flowLayoutPanel1.TabIndex = 17;
-            flowLayoutPanel1.Visible = false;
+            btnPesquisar.Location = new Point(288, 382);
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.Size = new Size(75, 23);
+            btnPesquisar.TabIndex = 17;
+            btnPesquisar.Text = "Pesquisar";
+            btnPesquisar.UseVisualStyleBackColor = true;
+            btnPesquisar.Click += btnPesquisar_Click;
             // 
             // FrmProduto
             // 
@@ -233,6 +220,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnPesquisar);
             Controls.Add(lblfoto);
             Controls.Add(btnExcluirFoto);
             Controls.Add(btnAdicionarFoto);
@@ -250,7 +238,6 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(flowLayoutPanel1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmProduto";
@@ -279,6 +266,6 @@
         private Button btnAdicionarFoto;
         private Button btnExcluirFoto;
         private Label lblfoto;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private Button btnPesquisar;
     }
 }

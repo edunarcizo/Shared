@@ -91,23 +91,50 @@ namespace SharedEmpresa
                     MessageBox.Show("Por favor, insira uma quantidade válida.");
                     return;
                 }
-                int codigoPedido = PedidoAtual.codigoPedido;
                 int codigoProduto = int.Parse(lblIdProduto.Text);
+                int codigoPedido = PedidoAtual.codigoPedido;
                 string datasource = "datasource=localhost; username=root; password=''; database=projeto ";
                 using (var conexao = new MySqlConnection(datasource))
-                using (var comando = new MySqlCommand("INSERT INTO itensPedido (codigoPedido, codigoProduto, quantidadeDoProduto) VALUES (@codigoPedido, @codigoProduto, @quantidadeDoProduto)", conexao))
                 {
-                    comando.Parameters.AddWithValue("@codigoPedido", codigoPedido);
-                    comando.Parameters.AddWithValue("@codigoProduto", codigoProduto);
-                    comando.Parameters.AddWithValue("@quantidadeDoProduto", quantidade);
                     conexao.Open();
-                    if (comando.ExecuteNonQuery() == 1)
+                    // 1) Verifica o estoque do produto
+                    string sqlEstoque = "SELECT quantidade FROM produto WHERE codigoProduto = @codigoProduto";
+                    using (var comandoEstoque = new MySqlCommand(sqlEstoque, conexao))
                     {
-                        MessageBox.Show("Adicionado com sucesso!");
+                        comandoEstoque.Parameters.AddWithValue("@codigoProduto", codigoProduto);
+                        int estoqueAtual = Convert.ToInt32(comandoEstoque.ExecuteScalar());
+                        // 2) Verifica se já existe esse produto no pedido
+                        string sqlCarrinho = @"SELECT quantidadeDoProduto
+                                      FROM itensPedido
+                                      WHERE codigoPedido = @codigoPedido AND codigoProduto = @codigoProduto";
+                        using (var comandoCarrinho = new MySqlCommand(sqlCarrinho, conexao))
+                        {
+                            comandoCarrinho.Parameters.AddWithValue("@codigoPedido", codigoPedido);
+                            comandoCarrinho.Parameters.AddWithValue("@codigoProduto", codigoProduto);
+                            object result = comandoCarrinho.ExecuteScalar();
+                            int quantidadeNoCarrinho = result != null ? Convert.ToInt32(result) : 0;
+                            // 3) Verifica se a soma ultrapassa o estoque
+                            if (quantidade + quantidadeNoCarrinho > estoqueAtual)
+                            {
+                                MessageBox.Show($"Quantidade solicitada ultrapassa o estoque disponível ({estoqueAtual}).");
+                                return;
+                            }
+                        }
+                    }
+                    // 4) Se passou nas verificações, insere
+                    string sqlInserir = @"INSERT INTO itensPedido (codigoPedido, codigoProduto, quantidadeDoProduto)
+                                 VALUES (@codigoPedido, @codigoProduto, @quantidadeDoProduto)";
+                    using (var comando = new MySqlCommand(sqlInserir, conexao))
+                    {
+                        comando.Parameters.AddWithValue("@codigoPedido", codigoPedido);
+                        comando.Parameters.AddWithValue("@codigoProduto", codigoProduto);
+                        comando.Parameters.AddWithValue("@quantidadeDoProduto", quantidade);
+                        if (comando.ExecuteNonQuery() == 1)
+                        {
+                            MessageBox.Show("Adicionado com sucesso!");
+                        }
                     }
                 }
-
-               
             }
             catch (Exception ex)
             {

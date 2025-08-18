@@ -33,12 +33,13 @@
             dataGridViewCarrinho = new DataGridView();
             lblTotal = new Label();
             cboFormaPagamento = new ComboBox();
+            btnExcluir = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).BeginInit();
             SuspendLayout();
             // 
             // btnVoltar
             // 
-            btnVoltar.Location = new Point(599, 415);
+            btnVoltar.Location = new Point(507, 415);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(75, 23);
             btnVoltar.TabIndex = 0;
@@ -63,6 +64,7 @@
             dataGridViewCarrinho.Name = "dataGridViewCarrinho";
             dataGridViewCarrinho.Size = new Size(703, 292);
             dataGridViewCarrinho.TabIndex = 2;
+            dataGridViewCarrinho.CellContentClick += dataGridViewCarrinho_CellContentClick;
             // 
             // lblTotal
             // 
@@ -81,11 +83,22 @@
             cboFormaPagamento.Size = new Size(121, 23);
             cboFormaPagamento.TabIndex = 4;
             // 
+            // btnExcluir
+            // 
+            btnExcluir.Location = new Point(608, 415);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Size = new Size(75, 23);
+            btnExcluir.TabIndex = 5;
+            btnExcluir.Text = "Excluir";
+            btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
+            // 
             // Carrinho
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnExcluir);
             Controls.Add(cboFormaPagamento);
             Controls.Add(lblTotal);
             Controls.Add(dataGridViewCarrinho);
@@ -106,5 +119,6 @@
         private DataGridView dataGridViewCarrinho;
         private Label lblTotal;
         private ComboBox cboFormaPagamento;
+        private Button btnExcluir;
     }
 }
