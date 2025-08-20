@@ -123,6 +123,7 @@
             lblIdProduto.Size = new Size(38, 15);
             lblIdProduto.TabIndex = 8;
             lblIdProduto.Text = "label2";
+            lblIdProduto.Visible = false;
             // 
             // Pedido
             // 

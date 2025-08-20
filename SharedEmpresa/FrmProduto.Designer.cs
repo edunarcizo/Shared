@@ -46,6 +46,7 @@
             btnExcluirFoto = new Button();
             lblfoto = new Label();
             btnPesquisar = new Button();
+            chkProdutoVisivel = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -199,6 +200,7 @@
             // 
             lblfoto.AutoSize = true;
             lblfoto.Location = new Point(419, 215);
+            lblfoto.MaximumSize = new Size(300, 0);
             lblfoto.Name = "lblfoto";
             lblfoto.Size = new Size(0, 15);
             lblfoto.TabIndex = 16;
@@ -213,6 +215,17 @@
             btnPesquisar.UseVisualStyleBackColor = true;
             btnPesquisar.Click += btnPesquisar_Click;
             // 
+            // chkProdutoVisivel
+            // 
+            chkProdutoVisivel.AutoSize = true;
+            chkProdutoVisivel.Location = new Point(113, 193);
+            chkProdutoVisivel.Name = "chkProdutoVisivel";
+            chkProdutoVisivel.Size = new Size(115, 19);
+            chkProdutoVisivel.TabIndex = 18;
+            chkProdutoVisivel.Text = "Venda disponível";
+            chkProdutoVisivel.UseVisualStyleBackColor = true;
+            chkProdutoVisivel.CheckedChanged += chkProdutoVisivel_CheckedChanged;
+            // 
             // FrmProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -220,6 +233,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 450);
+            Controls.Add(chkProdutoVisivel);
             Controls.Add(btnPesquisar);
             Controls.Add(lblfoto);
             Controls.Add(btnExcluirFoto);
@@ -267,5 +281,6 @@
         private Button btnExcluirFoto;
         private Label lblfoto;
         private Button btnPesquisar;
+        private CheckBox chkProdutoVisivel;
     }
 }

@@ -30,7 +30,7 @@ namespace SharedEmpresa
         private void Pedido_Load(object sender, EventArgs e)
         {
 
-            dataGridView1.DataSource = obterdados("select * from produto");
+            dataGridView1.DataSource = obterdados("select * from produto WHERE ativo = 1");
 
             if (PedidoAtual.codigoPedido == 0)
             {

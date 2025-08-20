@@ -27,6 +27,7 @@ namespace SharedEmpresa
             txtQuantidade.Clear();
             lblfoto.Text = "";
             pictureBox1.Image = null;
+            chkProdutoVisivel.Checked = false;
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace SharedEmpresa
             {
                 string data_source = "datasource=localhost; username=root; password=''; database=projeto ";
                 conexao = new MySqlConnection(data_source);
-                string sql = "INSERT INTO produto (nome, descricao, valor, quantidade, foto) VALUES (@nome, @descricao, @valor, @quantidade, @foto)";
+                string sql = "INSERT INTO produto (nome, descricao, valor, quantidade, foto, ativo) VALUES (@nome, @descricao, @valor, @quantidade, @foto, @ativo)";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                 comando.Parameters.AddWithValue("@nome", txtNome.Text);
@@ -43,6 +44,7 @@ namespace SharedEmpresa
                 comando.Parameters.AddWithValue("@valor", Convert.ToDecimal(txtValor.Text));
                 comando.Parameters.AddWithValue("@quantidade", Convert.ToInt32(txtQuantidade.Text));
                 comando.Parameters.AddWithValue("@foto", lblfoto.Text);
+                comando.Parameters.AddWithValue("@ativo", Convert.ToBoolean(chkProdutoVisivel.Checked));
                 conexao.Open();
 
                 if (comando.ExecuteNonQuery() == 1)
@@ -107,7 +109,7 @@ namespace SharedEmpresa
             {
                 string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                 conexao = new MySqlConnection(data_source);
-                string sql = "update produto set nome=@nome,descricao=@descricao,valor=@valor,quantidade=@quantidade,foto=@foto where codigoProduto=@codigoProduto";
+                string sql = "update produto set nome=@nome,descricao=@descricao,valor=@valor,quantidade=@quantidade,foto=@foto, ativo=@ativo where codigoProduto=@codigoProduto";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
 
                 comando.Parameters.AddWithValue("@codigoProduto", Convert.ToInt32(txtID.Text));
@@ -116,6 +118,7 @@ namespace SharedEmpresa
                 comando.Parameters.AddWithValue("@valor", Convert.ToDecimal(txtValor.Text));
                 comando.Parameters.AddWithValue("@quantidade", Convert.ToInt32(txtQuantidade.Text));
                 comando.Parameters.AddWithValue("@foto", lblfoto.Text);
+                comando.Parameters.AddWithValue("@ativo", Convert.ToBoolean(chkProdutoVisivel.Checked));
 
                 conexao.Open();
 
@@ -146,7 +149,7 @@ namespace SharedEmpresa
                     var confirmacao = MessageBox.Show("Você tem certeza que deseja excluir este produto?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (confirmacao == DialogResult.No)
                     {
-                        return; 
+                        return;
                     }
                     string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                     conexao = new MySqlConnection(data_source);
@@ -210,6 +213,7 @@ namespace SharedEmpresa
                                 txtValor.Text = reader["valor"].ToString();
                                 txtQuantidade.Text = reader["quantidade"].ToString();
                                 lblfoto.Text = reader["foto"].ToString();
+                                chkProdutoVisivel.Checked = reader.GetBoolean(reader.GetOrdinal("ativo"));
                                 if (!string.IsNullOrEmpty(lblfoto.Text) && System.IO.File.Exists(lblfoto.Text))
                                 {
                                     pictureBox1.Image = Image.FromFile(lblfoto.Text);
@@ -234,6 +238,11 @@ namespace SharedEmpresa
         }
 
         private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkProdutoVisivel_CheckedChanged(object sender, EventArgs e)
         {
 
         }
