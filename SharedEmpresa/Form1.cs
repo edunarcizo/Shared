@@ -11,6 +11,15 @@ namespace SharedEmpresa
         {
             InitializeComponent();
         }
+        private void LimparCampos()
+        {
+            txtCodigo.Clear();
+            txtNome.Clear();
+            txtEmail.Clear();
+            txtSenha.Clear();
+            cboCargo.SelectedIndex = -1;
+            chkAtivo.Checked = false;
+        }
 
         private void AtualiarGrid()
         {
@@ -95,6 +104,7 @@ namespace SharedEmpresa
                 if (comando.ExecuteNonQuery() == 1)
                 {
                     AtualiarGrid();
+                    LimparCampos();
                     MessageBox.Show("Cadastro realizado com sucesso!");
                 }
                 else
@@ -113,14 +123,7 @@ namespace SharedEmpresa
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*cboCargo.Items.Add("Gerente");
-            cboCargo.Items.Add("Vendedor");
-            cboCargo.Items.Add("Estoquista");
-            cboCargo.Items.Add("Assistente");
-            cboCargo.Items.Add("Diretor");
-            */
-
-
+            
             cboCargo.DataSource = obterdados("select * from cargo");
             cboCargo.ValueMember = "codigoCargo";
             cboCargo.DisplayMember = "cargo";
@@ -143,12 +146,11 @@ namespace SharedEmpresa
                 comando.Parameters.AddWithValue("@nome", txtNome.Text);
                 comando.Parameters.AddWithValue("@cargo", idCargo);
                 comando.Parameters.AddWithValue("@email", txtEmail.Text);
-
                 conexao.Open();
-
                 if (comando.ExecuteNonQuery() == 1)
                 {
                     AtualiarGrid();
+                    LimparCampos();
                     MessageBox.Show("Mudança realizada com sucesso!");
                 }
                 else
@@ -170,41 +172,38 @@ namespace SharedEmpresa
             {
                 if (!string.IsNullOrEmpty(txtCodigo.Text))
                 {
-
-
+                    var confirmacao = MessageBox.Show("Tem certeza que deseja excluir este usuário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (confirmacao == DialogResult.No)
+                    {
+                        return; 
+                    }
                     string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                     conexao = new MySqlConnection(data_source);
                     string sql = "delete from usuario where codigo=@codigo";
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
-
                     comando.Parameters.AddWithValue("@codigo", Convert.ToInt32(txtCodigo.Text));
-
-
                     conexao.Open();
-
                     if (comando.ExecuteNonQuery() == 1)
                     {
                         AtualiarGrid();
+                        LimparCampos();
                         MessageBox.Show("Usuário excluído com sucesso!");
                     }
                     else
                     {
                         MessageBox.Show("Erro ao exluir!");
                     }
-
                     conexao.Close();
                 }
                 else
                 {
                     MessageBox.Show("Por favor, informe o código do usuário a ser excluído.");
-
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex.Message);
             }
-
         }
 
 
@@ -218,8 +217,6 @@ namespace SharedEmpresa
             MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(comando);
             mySqlDataAdapter.Fill(dt);
             conexao.Close();
-
-
             return dt;
         }
 

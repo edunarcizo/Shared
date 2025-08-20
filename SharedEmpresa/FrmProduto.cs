@@ -18,6 +18,16 @@ namespace SharedEmpresa
         {
             InitializeComponent();
         }
+        private void LimparCampos()
+        {
+            txtID.Clear();
+            txtNome.Clear();
+            txtDescricao.Clear();
+            txtValor.Clear();
+            txtQuantidade.Clear();
+            lblfoto.Text = "";
+            pictureBox1.Image = null;
+        }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
@@ -37,6 +47,7 @@ namespace SharedEmpresa
 
                 if (comando.ExecuteNonQuery() == 1)
                 {
+                    LimparCampos();
                     MessageBox.Show("Produto cadastrado com sucesso!");
                 }
                 else
@@ -110,6 +121,7 @@ namespace SharedEmpresa
 
                 if (comando.ExecuteNonQuery() == 1)
                 {
+                    LimparCampos();
                     MessageBox.Show("Mudança realizada com sucesso!");
                 }
                 else
@@ -131,20 +143,20 @@ namespace SharedEmpresa
             {
                 if (!string.IsNullOrEmpty(txtID.Text))
                 {
-
-
+                    var confirmacao = MessageBox.Show("Você tem certeza que deseja excluir este produto?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (confirmacao == DialogResult.No)
+                    {
+                        return; 
+                    }
                     string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                     conexao = new MySqlConnection(data_source);
                     string sql = "delete from produto where codigoProduto=@codigoProduto";
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
-
                     comando.Parameters.AddWithValue("@codigoProduto", Convert.ToInt32(txtID.Text));
-
-
                     conexao.Open();
-
                     if (comando.ExecuteNonQuery() == 1)
                     {
+                        LimparCampos();
                         MessageBox.Show("Produto excluído com sucesso!");
                     }
                     else
@@ -193,13 +205,11 @@ namespace SharedEmpresa
                         {
                             if (reader.Read())
                             {
-                                // Preenche os campos do formulário
                                 txtNome.Text = reader["nome"].ToString();
                                 txtDescricao.Text = reader["descricao"].ToString();
                                 txtValor.Text = reader["valor"].ToString();
                                 txtQuantidade.Text = reader["quantidade"].ToString();
                                 lblfoto.Text = reader["foto"].ToString();
-                                // Se houver foto salva, mostra no PictureBox
                                 if (!string.IsNullOrEmpty(lblfoto.Text) && System.IO.File.Exists(lblfoto.Text))
                                 {
                                     pictureBox1.Image = Image.FromFile(lblfoto.Text);

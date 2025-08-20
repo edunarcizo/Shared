@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using static System.Net.WebRequestMethods;
 
 namespace SharedEmpresa
 {
@@ -74,11 +75,9 @@ namespace SharedEmpresa
                 using (MySqlConnection conexao = new MySqlConnection(datasource))
                 {
                     conexao.Open();
-                    // Gera o prazo de entrega aleatório
                     Random random = new Random();
                     int prazoEntrega = random.Next(10, 16);
                     DateTime dataEntrega = DateTime.Now.AddDays(prazoEntrega);
-                    // Atualiza o pedido existente (já criado em Pedido.cs)
                     string sqlUpdatePedido = @"
                UPDATE pedido
                SET formaPagamento = @formaPagamento,
@@ -89,13 +88,10 @@ namespace SharedEmpresa
                     comando.Parameters.AddWithValue("@dataEntrega", dataEntrega);
                     comando.Parameters.AddWithValue("@codigoPedido", PedidoAtual.codigoPedido);
                     comando.ExecuteNonQuery();
-                    // Mensagem para o cliente
                     MessageBox.Show($"Pedido realizado com sucesso! Prazo de entrega: {prazoEntrega} dias.");
-                    // Limpa a tela do carrinho
                     dataGridViewCarrinho.DataSource = null;
                     dataGridViewCarrinho.Columns.Clear();
                     lblTotal.Text = "Total: R$ 0.00";
-                    // Reseta o pedido atual para forçar criar um novo da próxima vez
                     PedidoAtual.codigoPedido = 0;
                     this.Close();
                 }
@@ -118,40 +114,49 @@ namespace SharedEmpresa
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if (idExcluir == 0)
+            if(dataGridViewCarrinho.SelectedRows.Count > 0)
             {
-                MessageBox.Show("Por favor, selecione um item para excluir.");
-                return;
-            }
-            try
-            {
-                string datasource = "datasource=localhost; username=root;password='';database=projeto";
-                using (MySqlConnection conexao = new MySqlConnection(datasource))
+                DataGridViewRow linhaselecionada = dataGridViewCarrinho.SelectedRows[0];
+                int codigoProduto = Convert.ToInt32(linhaselecionada.Cells["codigoProduto"].Value);
+                DialogResult resultado = MessageBox.Show("Deseja realmente excluir este item do carrinho?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (resultado == DialogResult.Yes)
                 {
-                    conexao.Open();
-                    string sqldelete = "DELETE FROM itensPedido WHERE codigoPedido = @codigoPedido AND codigoProduto = @codigoProduto";
-                    MySqlCommand comando = new MySqlCommand(sqldelete, conexao);
-                    comando.Parameters.AddWithValue("@codigoPedido", PedidoAtual.codigoPedido);
-                    comando.Parameters.AddWithValue("@codigoProduto", idExcluir);
-
-                    int linhasAfetadas = comando.ExecuteNonQuery();
-
-                    if (linhasAfetadas > 0)
+                    try
                     {
-                        MessageBox.Show("Item excluído com sucesso.");
-                        CarregarItensPedido(PedidoAtual.codigoPedido);
-                        idExcluir = 0; 
+                        string datasource = "datasource=localhost; username=root;password='';database=projeto";
+                        using (MySqlConnection conexao = new MySqlConnection(datasource))
+                        {
+                            conexao.Open();
+                            string sqldelete = "DELETE FROM itensPedido WHERE codigoPedido = @codigoPedido AND codigoProduto = @codigoProduto";
+                            MySqlCommand comando = new MySqlCommand(sqldelete, conexao);
+                            comando.Parameters.AddWithValue("@codigoPedido", PedidoAtual.codigoPedido);
+                            comando.Parameters.AddWithValue("@codigoProduto", idExcluir);
+
+                            int linhasAfetadas = comando.ExecuteNonQuery();
+
+                            if (linhasAfetadas > 0)
+                            {
+                                MessageBox.Show("Item excluído com sucesso.");
+                                CarregarItensPedido(PedidoAtual.codigoPedido);
+                                idExcluir = 0;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Erro ao excluir item. Por favor, tente novamente.");
+                            }
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Erro ao excluir item. Por favor, tente novamente.");
+                        MessageBox.Show("Erro ao excluir item: " + ex.Message);
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Selecione um item para excluir.");
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao excluir item: " + ex.Message);
-            }
+            
         }
 
         private void dataGridViewCarrinho_CellContentClick(object sender, DataGridViewCellEventArgs e)
