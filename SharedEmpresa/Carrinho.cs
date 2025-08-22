@@ -15,7 +15,7 @@ namespace SharedEmpresa
     public partial class Carrinho : Form
     {
 
-        int idExcluir;
+        
         public Carrinho()
         {
             InitializeComponent();
@@ -40,7 +40,7 @@ namespace SharedEmpresa
 
                     if (dataGridViewCarrinho.Columns["codigoProduto"] != null)
                     {
-                        dataGridViewCarrinho.Columns["codigoProduto"].Visible = false;
+                        dataGridViewCarrinho.Columns["codigoProduto"].Visible = true;
                     }
 
                     decimal totalPedido = tabela.AsEnumerable().Sum(row => row.Field<decimal>("valor") * row.Field<int>("quantidade"));
@@ -109,59 +109,65 @@ namespace SharedEmpresa
             cboFormaPagamento.Items.Add("Cartão de Débito");
             cboFormaPagamento.Items.Add("Boleto Bancário");
             cboFormaPagamento.Items.Add("Pix");
-            
+                
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if(dataGridViewCarrinho.SelectedRows.Count > 0)
+            if(string.IsNullOrEmpty(txtIdExcluir.Text))
             {
-                DataGridViewRow linhaselecionada = dataGridViewCarrinho.SelectedRows[0];
-                int codigoProduto = Convert.ToInt32(linhaselecionada.Cells["codigoProduto"].Value);
-                DialogResult resultado = MessageBox.Show("Deseja realmente excluir este item do carrinho?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (resultado == DialogResult.Yes)
+                MessageBox.Show("Selecione um item para excluir.");
+                return;
+            }
+            int idExcluir;
+
+            if (!int.TryParse(txtIdExcluir.Text, out idExcluir))
+            {
+                MessageBox.Show("Por favor, insira um ID válido.");
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Deseja realmente excluir este item do carrinho?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+
+
+                try
                 {
-                    try
+                    string datasource = "datasource=localhost; username=root;password='';database=projeto";
+                    using (MySqlConnection conexao = new MySqlConnection(datasource))
                     {
-                        string datasource = "datasource=localhost; username=root;password='';database=projeto";
-                        using (MySqlConnection conexao = new MySqlConnection(datasource))
+                        conexao.Open();
+                        string sqldelete = "DELETE FROM itensPedido WHERE codigoPedido = @codigoPedido AND codigoProduto = @codigoProduto";
+                        MySqlCommand comando = new MySqlCommand(sqldelete, conexao);
+                        comando.Parameters.AddWithValue("@codigoPedido", PedidoAtual.codigoPedido);
+                        comando.Parameters.AddWithValue("@codigoProduto", idExcluir);
+
+                        int linhasAfetadas = comando.ExecuteNonQuery();
+
+                        if (linhasAfetadas > 0)
                         {
-                            conexao.Open();
-                            string sqldelete = "DELETE FROM itensPedido WHERE codigoPedido = @codigoPedido AND codigoProduto = @codigoProduto";
-                            MySqlCommand comando = new MySqlCommand(sqldelete, conexao);
-                            comando.Parameters.AddWithValue("@codigoPedido", PedidoAtual.codigoPedido);
-                            comando.Parameters.AddWithValue("@codigoProduto", idExcluir);
-
-                            int linhasAfetadas = comando.ExecuteNonQuery();
-
-                            if (linhasAfetadas > 0)
-                            {
-                                MessageBox.Show("Item excluído com sucesso.");
-                                CarregarItensPedido(PedidoAtual.codigoPedido);
-                                idExcluir = 0;
-                            }
-                            else
-                            {
-                                MessageBox.Show("Erro ao excluir item. Por favor, tente novamente.");
-                            }
+                            MessageBox.Show("Item excluído com sucesso.");
+                            CarregarItensPedido(PedidoAtual.codigoPedido);
+                            txtIdExcluir.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao excluir item. Por favor, tente novamente.");
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Erro ao excluir item: " + ex.Message);
-                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Selecione um item para excluir.");
+                    MessageBox.Show("Erro ao excluir item: " + ex.Message);
                 }
             }
-            
         }
 
         private void dataGridViewCarrinho_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            idExcluir = Convert.ToInt32(dataGridViewCarrinho.Rows[e.RowIndex].Cells["codigoProduto"].Value);
+            
         }
     }
 }

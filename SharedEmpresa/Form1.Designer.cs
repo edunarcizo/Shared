@@ -45,6 +45,7 @@
             cboCargo = new ComboBox();
             label6 = new Label();
             chkAtivo = new CheckBox();
+            btnLimpar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -199,11 +200,22 @@
             chkAtivo.UseVisualStyleBackColor = true;
             chkAtivo.Visible = false;
             // 
+            // btnLimpar
+            // 
+            btnLimpar.Location = new Point(364, 166);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(75, 23);
+            btnLimpar.TabIndex = 17;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = true;
+            btnLimpar.Click += btnLimpar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLimpar);
             Controls.Add(chkAtivo);
             Controls.Add(label6);
             Controls.Add(cboCargo);
@@ -250,5 +262,6 @@
         private ComboBox cboCargo;
         private Label label6;
         private CheckBox chkAtivo;
+        private Button btnLimpar;
     }
 }

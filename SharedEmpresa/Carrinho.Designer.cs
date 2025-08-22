@@ -34,6 +34,8 @@
             lblTotal = new Label();
             cboFormaPagamento = new ComboBox();
             btnExcluir = new Button();
+            label1 = new Label();
+            txtIdExcluir = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).BeginInit();
             SuspendLayout();
             // 
@@ -93,11 +95,29 @@
             btnExcluir.UseVisualStyleBackColor = true;
             btnExcluir.Click += btnExcluir_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(53, 423);
+            label1.Name = "label1";
+            label1.Size = new Size(143, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Id do produto para excluir";
+            // 
+            // txtIdExcluir
+            // 
+            txtIdExcluir.Location = new Point(202, 420);
+            txtIdExcluir.Name = "txtIdExcluir";
+            txtIdExcluir.Size = new Size(100, 23);
+            txtIdExcluir.TabIndex = 7;
+            // 
             // Carrinho
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtIdExcluir);
+            Controls.Add(label1);
             Controls.Add(btnExcluir);
             Controls.Add(cboFormaPagamento);
             Controls.Add(lblTotal);
@@ -120,5 +140,7 @@
         private Label lblTotal;
         private ComboBox cboFormaPagamento;
         private Button btnExcluir;
+        private Label label1;
+        private TextBox txtIdExcluir;
     }
 }
