@@ -57,6 +57,7 @@
             // lblNome
             // 
             lblNome.AutoSize = true;
+            lblNome.BackColor = Color.Transparent;
             lblNome.Location = new Point(23, 309);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(43, 15);
@@ -66,6 +67,7 @@
             // lblDescricao
             // 
             lblDescricao.AutoSize = true;
+            lblDescricao.BackColor = Color.Transparent;
             lblDescricao.Location = new Point(23, 338);
             lblDescricao.Name = "lblDescricao";
             lblDescricao.Size = new Size(61, 15);
@@ -75,6 +77,7 @@
             // lblValor
             // 
             lblValor.AutoSize = true;
+            lblValor.BackColor = Color.Transparent;
             lblValor.Location = new Point(23, 366);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(40, 15);
@@ -91,6 +94,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(23, 396);
             label1.Name = "label1";
             label1.Size = new Size(72, 15);
@@ -120,6 +124,7 @@
             // lblIdProduto
             // 
             lblIdProduto.AutoSize = true;
+            lblIdProduto.BackColor = Color.Transparent;
             lblIdProduto.Location = new Point(371, 309);
             lblIdProduto.Name = "lblIdProduto";
             lblIdProduto.Size = new Size(38, 15);
@@ -132,7 +137,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            BackgroundImage = Properties.Resources.Pedido;
+            BackgroundImage = Properties.Resources.Coringa;
             ClientSize = new Size(800, 450);
             Controls.Add(lblIdProduto);
             Controls.Add(btnVerCarrinho);

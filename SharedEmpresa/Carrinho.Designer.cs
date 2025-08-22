@@ -36,7 +36,7 @@
             btnExcluir = new Button();
             txtIdExcluir = new TextBox();
             label1 = new Label();
-            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).BeginInit();
             SuspendLayout();
             // 
@@ -74,7 +74,8 @@
             // lblTotal
             // 
             lblTotal.AutoSize = true;
-            lblTotal.Location = new Point(40, 321);
+            lblTotal.BackColor = Color.Transparent;
+            lblTotal.Location = new Point(21, 321);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(36, 15);
             lblTotal.TabIndex = 3;
@@ -83,7 +84,7 @@
             // cboFormaPagamento
             // 
             cboFormaPagamento.FormattingEnabled = true;
-            cboFormaPagamento.Location = new Point(43, 354);
+            cboFormaPagamento.Location = new Point(219, 368);
             cboFormaPagamento.Name = "cboFormaPagamento";
             cboFormaPagamento.Size = new Size(121, 23);
             cboFormaPagamento.TabIndex = 4;
@@ -100,7 +101,7 @@
             // 
             // txtIdExcluir
             // 
-            txtIdExcluir.Location = new Point(43, 413);
+            txtIdExcluir.Location = new Point(228, 413);
             txtIdExcluir.Name = "txtIdExcluir";
             txtIdExcluir.Size = new Size(100, 23);
             txtIdExcluir.TabIndex = 23;
@@ -108,29 +109,31 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(40, 390);
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(21, 416);
             label1.Name = "label1";
             label1.Size = new Size(201, 15);
             label1.TabIndex = 24;
             label1.Text = "Digite o id do produto a ser excluído:";
             // 
-            // label2
+            // label3
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(219, 321);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 25;
-            label2.Text = "label2";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Location = new Point(21, 371);
+            label3.Name = "label3";
+            label3.Size = new Size(181, 15);
+            label3.TabIndex = 26;
+            label3.Text = "Selecione a forma de pagamento";
             // 
             // Carrinho
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            BackgroundImage = Properties.Resources.CarrinhoCertoCerto;
+            BackgroundImage = Properties.Resources.Coringa;
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
+            Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(txtIdExcluir);
             Controls.Add(btnExcluir);
@@ -157,6 +160,6 @@
         private Button btnExcluir;
         private TextBox txtIdExcluir;
         private Label label1;
-        private Label label2;
+        private Label label3;
     }
 }

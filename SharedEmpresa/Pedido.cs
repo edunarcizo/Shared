@@ -36,6 +36,7 @@ namespace SharedEmpresa
             {
                 CriarPedido();
             }
+            lblIdProduto.Visible = false;
 
         }
 
@@ -97,13 +98,11 @@ namespace SharedEmpresa
                 using (var conexao = new MySqlConnection(datasource))
                 {
                     conexao.Open();
-                    // 1) Verifica o estoque do produto
                     string sqlEstoque = "SELECT quantidade FROM produto WHERE codigoProduto = @codigoProduto";
                     using (var comandoEstoque = new MySqlCommand(sqlEstoque, conexao))
                     {
                         comandoEstoque.Parameters.AddWithValue("@codigoProduto", codigoProduto);
                         int estoqueAtual = Convert.ToInt32(comandoEstoque.ExecuteScalar());
-                        // 2) Verifica se já existe esse produto no pedido
                         string sqlCarrinho = @"SELECT quantidadeDoProduto
                                       FROM itensPedido
                                       WHERE codigoPedido = @codigoPedido AND codigoProduto = @codigoProduto";
@@ -113,7 +112,6 @@ namespace SharedEmpresa
                             comandoCarrinho.Parameters.AddWithValue("@codigoProduto", codigoProduto);
                             object result = comandoCarrinho.ExecuteScalar();
                             int quantidadeNoCarrinho = result != null ? Convert.ToInt32(result) : 0;
-                            // 3) Verifica se a soma ultrapassa o estoque
                             if (quantidade + quantidadeNoCarrinho > estoqueAtual)
                             {
                                 MessageBox.Show($"Quantidade solicitada ultrapassa o estoque disponível ({estoqueAtual}).");
@@ -121,7 +119,6 @@ namespace SharedEmpresa
                             }
                         }
                     }
-                    // 4) Se passou nas verificações, insere
                     string sqlInserir = @"INSERT INTO itensPedido (codigoPedido, codigoProduto, quantidadeDoProduto)
                                  VALUES (@codigoPedido, @codigoProduto, @quantidadeDoProduto)";
                     using (var comando = new MySqlCommand(sqlInserir, conexao))
@@ -132,6 +129,10 @@ namespace SharedEmpresa
                         if (comando.ExecuteNonQuery() == 1)
                         {
                             MessageBox.Show("Adicionado com sucesso!");
+                            lblNome.Text = "Nome:";
+                            lblIdProduto.Text = "ID:";
+                            lblDescricao.Text = "Descrição:";
+                            lblValor.Text = "Valor:";
                         }
                     }
                 }

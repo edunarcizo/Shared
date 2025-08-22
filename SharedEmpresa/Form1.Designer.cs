@@ -51,6 +51,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(21, 76);
             label1.Name = "label1";
             label1.Size = new Size(46, 15);
@@ -60,6 +61,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Location = new Point(21, 109);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
@@ -69,6 +71,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Location = new Point(21, 142);
             label3.Name = "label3";
             label3.Size = new Size(41, 15);
@@ -78,6 +81,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Location = new Point(21, 176);
             label4.Name = "label4";
             label4.Size = new Size(39, 15);
@@ -87,6 +91,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Location = new Point(21, 209);
             label5.Name = "label5";
             label5.Size = new Size(39, 15);
@@ -185,6 +190,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Location = new Point(21, 243);
             label6.Name = "label6";
             label6.Size = new Size(35, 15);
@@ -208,7 +214,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            BackgroundImage = Properties.Resources.Form1Certo;
+            BackgroundImage = Properties.Resources.Coringa;
             ClientSize = new Size(800, 450);
             Controls.Add(chkAtivo);
             Controls.Add(label6);

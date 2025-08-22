@@ -75,7 +75,7 @@ namespace SharedEmpresa
             if (foto.ShowDialog() == DialogResult.OK)
             {
                 Image arquivo = Image.FromFile(foto.FileName);
-
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 string CaminhoCompleto = foto.FileName;
                 string nomeArquivo = Path.GetFileName(CaminhoCompleto);
                 string caminhoDestino = Path.Combine(Application.StartupPath, "Produto", nomeArquivo);

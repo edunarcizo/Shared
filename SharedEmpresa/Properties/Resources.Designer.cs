@@ -103,6 +103,16 @@ namespace SharedEmpresa.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Coringa {
+            get {
+                object obj = ResourceManager.GetObject("Coringa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Form1 {
             get {
                 object obj = ResourceManager.GetObject("Form1", resourceCulture);

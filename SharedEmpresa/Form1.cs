@@ -137,7 +137,7 @@ namespace SharedEmpresa
             {
                 string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                 conexao = new MySqlConnection(data_source);
-                string sql = "update usuario set nome=@nome,email=@email,senha=@senha,cargo=@cargo where codidgo=@codigo";
+                string sql = "update usuario set nome=@nome,email=@email,senha=@senha,cargo=@cargo where codigo=@codigo";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 string senha = txtSenha.Text.Trim();
                 string senhahash = BCrypt.Net.BCrypt.HashPassword(senha);

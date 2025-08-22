@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\carrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\carrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\carrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\carrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,22 +51,7 @@
       "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\carrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aluno\\Downloads\\FrmMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\sessaousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|solutionrelative:sharedempresa\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B756489-FF95-4BB2-8917-F6E48C6DACD4}|SharedEmpresa\\SharedEmpresa.csproj|c:\\users\\eduna\\onedrive\\documentos\\github\\shared\\sharedempresa\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -84,76 +77,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "teste.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\teste.cs",
-              "RelativeDocumentMoniker": "SharedEmpresa\\teste.cs",
-              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\teste.cs [Projeto]",
-              "RelativeToolTip": "SharedEmpresa\\teste.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T15:53:10.541Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAHINAAAAAAAAAIAwwH4NAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-08-22T13:56:34.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Form1.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Form1.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Form1.cs [Projeto]",
               "RelativeToolTip": "SharedEmpresa\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T11:33:40.343Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-08-06T11:33:40.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "FrmMenu.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\FrmMenu.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs [Projeto]",
               "RelativeToolTip": "SharedEmpresa\\FrmMenu.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T12:03:58.212Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-08-04T12:03:58.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Login.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Login.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Login.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Login.cs [Projeto]",
               "RelativeToolTip": "SharedEmpresa\\Login.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:22:33.941Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-08-04T11:22:33.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "FrmProduto.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmProduto.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\FrmProduto.cs",
-              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmProduto.cs [Projeto]",
-              "RelativeToolTip": "SharedEmpresa\\FrmProduto.cs [Projeto]",
+              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmProduto.cs [Projeto]*",
+              "RelativeToolTip": "SharedEmpresa\\FrmProduto.cs [Projeto]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T13:38:30.23Z",
               "EditorCaption": " [Projeto]"
@@ -161,42 +127,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Pedido.cs [Projeto]",
+              "Title": "Pedido.cs [Design]",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Pedido.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Pedido.cs",
-              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Pedido.cs [Projeto]",
-              "RelativeToolTip": "SharedEmpresa\\Pedido.cs [Projeto]",
+              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Pedido.cs [Design]",
+              "RelativeToolTip": "SharedEmpresa\\Pedido.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T12:29:21.273Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-08-13T12:29:21.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Carrinho.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Carrinho.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Carrinho.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Carrinho.cs [Projeto]",
               "RelativeToolTip": "SharedEmpresa\\Carrinho.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T13:34:14.799Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-08-13T13:34:14.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "SessaoUsuario.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\SessaoUsuario.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\SessaoUsuario.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\SessaoUsuario.cs",
               "RelativeToolTip": "SharedEmpresa\\SessaoUsuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T11:22:36.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Login.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Login.cs",
@@ -204,12 +168,11 @@
               "RelativeToolTip": "SharedEmpresa\\Login.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAowHQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T12:07:39.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T12:07:39.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "FrmMenu.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\FrmMenu.cs",
@@ -220,18 +183,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "FrmProduto.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmProduto.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\FrmProduto.cs",
-              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmProduto.cs",
-              "RelativeToolTip": "SharedEmpresa\\FrmProduto.cs",
+              "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmProduto.cs*",
+              "RelativeToolTip": "SharedEmpresa\\FrmProduto.cs*",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwE0AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T13:39:54.773Z"
+              "WhenOpened": "2025-08-04T13:39:54.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "FrmMenu.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\FrmMenu.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Aluno\\Downloads\\FrmMenu.cs",
@@ -242,33 +207,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Pedido.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Pedido.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Pedido.cs",
               "RelativeToolTip": "SharedEmpresa\\Pedido.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAWwBcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwCYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T12:34:37.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T12:34:37.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Form1.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Form1.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Form1.cs",
               "RelativeToolTip": "SharedEmpresa\\Form1.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAD4v30AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAowIsAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T11:34:19.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T11:34:19.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Carrinho.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\Carrinho.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\Carrinho.cs",
@@ -276,12 +239,11 @@
               "RelativeToolTip": "SharedEmpresa\\Carrinho.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAewDkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T11:17:36.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T11:17:36.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "PedidoAtual.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\PedidoAtual.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\PedidoAtual.cs",
@@ -293,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "database.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\database.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\database.cs",
@@ -305,15 +267,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "FrmMenu.Designer.cs",
               "DocumentMoniker": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.Designer.cs",
               "RelativeDocumentMoniker": "SharedEmpresa\\FrmMenu.Designer.cs",
               "ToolTip": "C:\\Users\\eduna\\OneDrive\\Documentos\\GitHub\\Shared\\SharedEmpresa\\FrmMenu.Designer.cs",
               "RelativeToolTip": "SharedEmpresa\\FrmMenu.Designer.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T15:14:04.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T15:14:04.692Z"
             }
           ]
         }
