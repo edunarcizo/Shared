@@ -24,12 +24,12 @@ namespace SharedEmpresa
             };
         }
 
-        private int tentativas = 0; 
-        public Login()  
+        private int tentativas = 0;
+        public Login()
         {
             InitializeComponent();
-            this.AcceptButton = btnLogar; 
-            txtSenha.UseSystemPasswordChar = true; 
+            this.AcceptButton = btnLogar;
+            txtSenha.UseSystemPasswordChar = true;
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -109,7 +109,12 @@ namespace SharedEmpresa
 
         private void chkMostrarSenha_CheckedChanged_1(object sender, EventArgs e)
         {
-                txtSenha.UseSystemPasswordChar = !chkMostrarSenha.Checked;
+            txtSenha.UseSystemPasswordChar = !chkMostrarSenha.Checked;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

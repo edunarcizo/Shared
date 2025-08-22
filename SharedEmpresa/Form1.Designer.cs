@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -46,97 +45,88 @@
             cboCargo = new ComboBox();
             label6 = new Label();
             chkAtivo = new CheckBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(37, 132);
+            label1.Location = new Point(21, 76);
             label1.Name = "label1";
-            label1.Size = new Size(58, 20);
+            label1.Size = new Size(46, 15);
             label1.TabIndex = 0;
             label1.Text = "Código";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(37, 176);
+            label2.Location = new Point(21, 109);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(40, 15);
             label2.TabIndex = 1;
             label2.Text = "Nome";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(37, 220);
+            label3.Location = new Point(21, 142);
             label3.Name = "label3";
-            label3.Size = new Size(52, 20);
+            label3.Size = new Size(41, 15);
             label3.TabIndex = 2;
             label3.Text = "E-mail";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(37, 265);
+            label4.Location = new Point(21, 176);
             label4.Name = "label4";
-            label4.Size = new Size(49, 20);
+            label4.Size = new Size(39, 15);
             label4.TabIndex = 3;
             label4.Text = "Senha";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(37, 309);
+            label5.Location = new Point(21, 209);
             label5.Name = "label5";
-            label5.Size = new Size(49, 20);
+            label5.Size = new Size(39, 15);
             label5.TabIndex = 4;
             label5.Text = "Cargo";
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(119, 132);
-            txtCodigo.Margin = new Padding(3, 4, 3, 4);
+            txtCodigo.Location = new Point(93, 76);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(114, 27);
+            txtCodigo.Size = new Size(100, 23);
             txtCodigo.TabIndex = 5;
             txtCodigo.TextChanged += txtCodigo_TextChanged;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(119, 176);
-            txtNome.Margin = new Padding(3, 4, 3, 4);
+            txtNome.Location = new Point(93, 109);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(114, 27);
+            txtNome.Size = new Size(100, 23);
             txtNome.TabIndex = 6;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(119, 220);
-            txtEmail.Margin = new Padding(3, 4, 3, 4);
+            txtEmail.Location = new Point(93, 142);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(114, 27);
+            txtEmail.Size = new Size(100, 23);
             txtEmail.TabIndex = 7;
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(119, 265);
-            txtSenha.Margin = new Padding(3, 4, 3, 4);
+            txtSenha.Location = new Point(93, 176);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(114, 27);
+            txtSenha.Size = new Size(100, 23);
             txtSenha.TabIndex = 8;
             // 
             // btnCadastrar
             // 
-            btnCadastrar.Location = new Point(311, 132);
-            btnCadastrar.Margin = new Padding(3, 4, 3, 4);
+            btnCadastrar.Location = new Point(343, 243);
             btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(86, 31);
+            btnCadastrar.Size = new Size(75, 23);
             btnCadastrar.TabIndex = 9;
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.UseVisualStyleBackColor = true;
@@ -144,10 +134,9 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(311, 176);
-            btnEditar.Margin = new Padding(3, 4, 3, 4);
+            btnEditar.Location = new Point(343, 132);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(86, 31);
+            btnEditar.Size = new Size(75, 23);
             btnEditar.TabIndex = 10;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -155,10 +144,9 @@
             // 
             // btnExcluir
             // 
-            btnExcluir.Location = new Point(311, 220);
-            btnExcluir.Margin = new Padding(3, 4, 3, 4);
+            btnExcluir.Location = new Point(343, 189);
             btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(86, 31);
+            btnExcluir.Size = new Size(75, 23);
             btnExcluir.TabIndex = 11;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
@@ -166,10 +154,9 @@
             // 
             // btnPesquisar
             // 
-            btnPesquisar.Location = new Point(311, 265);
-            btnPesquisar.Margin = new Padding(3, 4, 3, 4);
+            btnPesquisar.Location = new Point(343, 72);
             btnPesquisar.Name = "btnPesquisar";
-            btnPesquisar.Size = new Size(86, 31);
+            btnPesquisar.Size = new Size(75, 23);
             btnPesquisar.TabIndex = 12;
             btnPesquisar.Text = "Pesquisar";
             btnPesquisar.UseVisualStyleBackColor = true;
@@ -179,72 +166,50 @@
             // 
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 385);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Location = new Point(10, 282);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(890, 200);
+            dataGridView1.Size = new Size(779, 167);
             dataGridView1.TabIndex = 13;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // cboCargo
             // 
             cboCargo.FormattingEnabled = true;
-            cboCargo.Location = new Point(119, 309);
-            cboCargo.Margin = new Padding(3, 4, 3, 4);
+            cboCargo.Location = new Point(93, 209);
             cboCargo.Name = "cboCargo";
-            cboCargo.Size = new Size(138, 28);
+            cboCargo.Size = new Size(121, 23);
             cboCargo.TabIndex = 14;
             cboCargo.SelectedIndexChanged += cboCargo_SelectedIndexChanged;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(36, 361);
+            label6.Location = new Point(21, 243);
             label6.Name = "label6";
-            label6.Size = new Size(44, 20);
+            label6.Size = new Size(35, 15);
             label6.TabIndex = 15;
             label6.Text = "Ativo";
             // 
             // chkAtivo
             // 
             chkAtivo.AutoSize = true;
-            chkAtivo.Location = new Point(119, 361);
-            chkAtivo.Margin = new Padding(3, 4, 3, 4);
+            chkAtivo.BackColor = Color.Transparent;
+            chkAtivo.Location = new Point(93, 243);
             chkAtivo.Name = "chkAtivo";
-            chkAtivo.Size = new Size(66, 24);
+            chkAtivo.Size = new Size(54, 19);
             chkAtivo.TabIndex = 16;
             chkAtivo.Text = "Ativo";
-            chkAtivo.UseVisualStyleBackColor = true;
+            chkAtivo.UseVisualStyleBackColor = false;
             chkAtivo.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.MediumBlue;
-            pictureBox2.Location = new Point(-10, 1);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(988, 116);
-            pictureBox2.TabIndex = 20;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Location = new Point(364, 1);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(183, 116);
-            pictureBox3.TabIndex = 21;
-            pictureBox3.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Violet;
-            ClientSize = new Size(914, 600);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
+            BackColor = Color.White;
+            BackgroundImage = Properties.Resources.Form1Certo;
+            ClientSize = new Size(800, 450);
             Controls.Add(chkAtivo);
             Controls.Add(label6);
             Controls.Add(cboCargo);
@@ -262,15 +227,12 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -294,7 +256,5 @@
         private ComboBox cboCargo;
         private Label label6;
         private CheckBox chkAtivo;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
     }
 }

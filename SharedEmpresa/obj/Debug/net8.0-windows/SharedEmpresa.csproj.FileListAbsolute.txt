@@ -118,3 +118,5 @@ C:\Users\Aluno\Downloads\Shared-main (2) (1)\Shared-main\SharedEmpresa\obj\Debug
 C:\Users\Aluno\Downloads\Shared-main (2) (1)\Shared-main\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.pdb
 C:\Users\Aluno\Downloads\Shared-main (2) (1)\Shared-main\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.genruntimeconfig.cache
 C:\Users\Aluno\Downloads\Shared-main (2) (1)\Shared-main\SharedEmpresa\obj\Debug\net8.0-windows\ref\SharedEmpresa.dll
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.Properties.Resources.resources
+C:\Users\eduna\OneDrive\Documentos\GitHub\Shared\SharedEmpresa\obj\Debug\net8.0-windows\SharedEmpresa.teste.resources

@@ -15,7 +15,7 @@ namespace SharedEmpresa
     public partial class Carrinho : Form
     {
 
-        int idExcluir;
+        
         public Carrinho()
         {
             InitializeComponent();
@@ -114,11 +114,18 @@ namespace SharedEmpresa
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if(dataGridViewCarrinho.SelectedRows.Count > 0)
+            if(string.IsNullOrEmpty(txtIdExcluir.Text))
             {
-                DataGridViewRow linhaselecionada = dataGridViewCarrinho.SelectedRows[0];
-                int codigoProduto = Convert.ToInt32(linhaselecionada.Cells["codigoProduto"].Value);
-                DialogResult resultado = MessageBox.Show("Deseja realmente excluir este item do carrinho?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                MessageBox.Show("Por favor, selecione um item para excluir.");
+            }
+            int idExcluir;
+            if (!int.TryParse(txtIdExcluir.Text, out idExcluir) || idExcluir <= 0)
+            {
+                MessageBox.Show("Por favor, insira um ID válido.");
+                return;
+            }
+
+            DialogResult resultado = MessageBox.Show("Deseja realmente excluir este item do carrinho?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (resultado == DialogResult.Yes)
                 {
                     try
@@ -150,18 +157,14 @@ namespace SharedEmpresa
                     {
                         MessageBox.Show("Erro ao excluir item: " + ex.Message);
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Selecione um item para excluir.");
-                }
+               
             }
             
         }
 
         private void dataGridViewCarrinho_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            idExcluir = Convert.ToInt32(dataGridViewCarrinho.Rows[e.RowIndex].Cells["codigoProduto"].Value);
+            
         }
     }
 }

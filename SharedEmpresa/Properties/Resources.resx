@@ -117,4 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Carrinho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Carrinho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Form1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carrinho1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Carrinho1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pedido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pedido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarrinhoCertoCerto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarrinhoCertoCerto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelaLogin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaLogin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Form11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarrinhoCerto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarrinhoCerto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form1Certo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Form1Certo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

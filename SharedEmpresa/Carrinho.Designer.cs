@@ -28,26 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carrinho));
             btnVoltar = new Button();
             btnFinalizar = new Button();
             dataGridViewCarrinho = new DataGridView();
             lblTotal = new Label();
             cboFormaPagamento = new ComboBox();
             btnExcluir = new Button();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
+            txtIdExcluir = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // btnVoltar
             // 
-            btnVoltar.Location = new Point(579, 553);
-            btnVoltar.Margin = new Padding(3, 4, 3, 4);
+            btnVoltar.Location = new Point(522, 412);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(86, 31);
+            btnVoltar.Size = new Size(75, 23);
             btnVoltar.TabIndex = 0;
             btnVoltar.Text = "Voltar";
             btnVoltar.UseVisualStyleBackColor = true;
@@ -55,10 +52,9 @@
             // 
             // btnFinalizar
             // 
-            btnFinalizar.Location = new Point(798, 553);
-            btnFinalizar.Margin = new Padding(3, 4, 3, 4);
+            btnFinalizar.Location = new Point(713, 412);
             btnFinalizar.Name = "btnFinalizar";
-            btnFinalizar.Size = new Size(86, 31);
+            btnFinalizar.Size = new Size(75, 23);
             btnFinalizar.TabIndex = 1;
             btnFinalizar.Text = "Finalizar";
             btnFinalizar.UseVisualStyleBackColor = true;
@@ -68,84 +64,85 @@
             // 
             dataGridViewCarrinho.BackgroundColor = SystemColors.Control;
             dataGridViewCarrinho.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCarrinho.Location = new Point(12, 163);
-            dataGridViewCarrinho.Margin = new Padding(3, 4, 3, 4);
+            dataGridViewCarrinho.Location = new Point(12, 58);
             dataGridViewCarrinho.Name = "dataGridViewCarrinho";
             dataGridViewCarrinho.RowHeadersWidth = 51;
-            dataGridViewCarrinho.Size = new Size(890, 333);
+            dataGridViewCarrinho.Size = new Size(779, 250);
             dataGridViewCarrinho.TabIndex = 2;
             dataGridViewCarrinho.CellContentClick += dataGridViewCarrinho_CellContentClick;
             // 
             // lblTotal
             // 
             lblTotal.AutoSize = true;
-            lblTotal.Location = new Point(26, 514);
+            lblTotal.Location = new Point(40, 321);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(45, 20);
+            lblTotal.Size = new Size(36, 15);
             lblTotal.TabIndex = 3;
             lblTotal.Text = "Total:";
             // 
             // cboFormaPagamento
             // 
             cboFormaPagamento.FormattingEnabled = true;
-            cboFormaPagamento.Location = new Point(30, 553);
-            cboFormaPagamento.Margin = new Padding(3, 4, 3, 4);
+            cboFormaPagamento.Location = new Point(43, 354);
             cboFormaPagamento.Name = "cboFormaPagamento";
-            cboFormaPagamento.Size = new Size(138, 28);
+            cboFormaPagamento.Size = new Size(121, 23);
             cboFormaPagamento.TabIndex = 4;
             // 
             // btnExcluir
             // 
-            btnExcluir.Location = new Point(695, 553);
-            btnExcluir.Margin = new Padding(3, 4, 3, 4);
+            btnExcluir.Location = new Point(623, 412);
             btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(86, 31);
+            btnExcluir.Size = new Size(75, 23);
             btnExcluir.TabIndex = 5;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
             btnExcluir.Click += btnExcluir_Click;
             // 
-            // pictureBox2
+            // txtIdExcluir
             // 
-            pictureBox2.BackColor = Color.MediumBlue;
-            pictureBox2.Location = new Point(-17, -5);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(988, 116);
-            pictureBox2.TabIndex = 21;
-            pictureBox2.TabStop = false;
+            txtIdExcluir.Location = new Point(43, 413);
+            txtIdExcluir.Name = "txtIdExcluir";
+            txtIdExcluir.Size = new Size(100, 23);
+            txtIdExcluir.TabIndex = 23;
             // 
-            // pictureBox3
+            // label1
             // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Location = new Point(377, -5);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(183, 116);
-            pictureBox3.TabIndex = 22;
-            pictureBox3.TabStop = false;
+            label1.AutoSize = true;
+            label1.Location = new Point(40, 390);
+            label1.Name = "label1";
+            label1.Size = new Size(201, 15);
+            label1.TabIndex = 24;
+            label1.Text = "Digite o id do produto a ser excluído:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(219, 321);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 25;
+            label2.Text = "label2";
             // 
             // Carrinho
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Violet;
-            ClientSize = new Size(914, 600);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
+            BackColor = Color.White;
+            BackgroundImage = Properties.Resources.CarrinhoCertoCerto;
+            ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(txtIdExcluir);
             Controls.Add(btnExcluir);
             Controls.Add(cboFormaPagamento);
             Controls.Add(lblTotal);
             Controls.Add(dataGridViewCarrinho);
             Controls.Add(btnFinalizar);
             Controls.Add(btnVoltar);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Carrinho";
             Text = "Carrinho";
             Load += Carrinho_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewCarrinho).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -158,7 +155,8 @@
         private Label lblTotal;
         private ComboBox cboFormaPagamento;
         private Button btnExcluir;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private TextBox txtIdExcluir;
+        private Label label1;
+        private Label label2;
     }
 }

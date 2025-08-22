@@ -40,19 +40,19 @@ namespace SharedEmpresa
                 using (MySqlConnection conexao = new MySqlConnection(conexaoStr))
                 {
                     conexao.Open();
-                    
+
                     string sql = "SELECT * FROM usuario WHERE 1=1";
                     if (!string.IsNullOrEmpty(txtCodigo.Text))
                         sql += " AND codigo = @codigo";
                     if (!string.IsNullOrEmpty(txtEmail.Text))
                         sql += " AND email LIKE @email";
-                    
+
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
                     if (!string.IsNullOrEmpty(txtCodigo.Text))
                         comando.Parameters.AddWithValue("@codigo", Convert.ToInt32(txtCodigo.Text));
                     if (!string.IsNullOrEmpty(txtEmail.Text))
                         comando.Parameters.AddWithValue("@email", "%" + txtEmail.Text.Trim() + "%");
-                    
+
                     MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
@@ -123,7 +123,7 @@ namespace SharedEmpresa
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             cboCargo.DataSource = obterdados("select * from cargo");
             cboCargo.ValueMember = "codigoCargo";
             cboCargo.DisplayMember = "cargo";
@@ -175,7 +175,7 @@ namespace SharedEmpresa
                     var confirmacao = MessageBox.Show("Tem certeza que deseja excluir este usuário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (confirmacao == DialogResult.No)
                     {
-                        return; 
+                        return;
                     }
                     string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                     conexao = new MySqlConnection(data_source);
@@ -244,6 +244,11 @@ namespace SharedEmpresa
         private void cboCargo_SelectedIndexChanged(object sender, EventArgs e)
         {
             idCargo = Convert.ToInt32(((DataRowView)cboCargo.SelectedItem)["codigoCargo"]);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
