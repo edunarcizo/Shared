@@ -33,7 +33,7 @@ namespace SharedEmpresa
             produtoToolStripMenuItem.Visible = (cargo == 1 || cargo == 3);
             adicionarToolStripMenuItem.Visible = (cargo != 1);
         }
-
+        
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 formUsuario = new Form1
@@ -74,13 +74,6 @@ namespace SharedEmpresa
                 loginForm.Show();
                 this.Close();
             }
-        }
-
-        private void carrinhoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Carrinho carrinho = new Carrinho();
-            carrinho.MdiParent = this;
-            carrinho.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

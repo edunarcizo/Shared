@@ -40,19 +40,19 @@ namespace SharedEmpresa
                 using (MySqlConnection conexao = new MySqlConnection(conexaoStr))
                 {
                     conexao.Open();
-
+                    
                     string sql = "SELECT * FROM usuario WHERE 1=1";
                     if (!string.IsNullOrEmpty(txtCodigo.Text))
                         sql += " AND codigo = @codigo";
                     if (!string.IsNullOrEmpty(txtEmail.Text))
                         sql += " AND email LIKE @email";
-
+                    
                     MySqlCommand comando = new MySqlCommand(sql, conexao);
                     if (!string.IsNullOrEmpty(txtCodigo.Text))
                         comando.Parameters.AddWithValue("@codigo", Convert.ToInt32(txtCodigo.Text));
                     if (!string.IsNullOrEmpty(txtEmail.Text))
                         comando.Parameters.AddWithValue("@email", "%" + txtEmail.Text.Trim() + "%");
-
+                    
                     MySqlDataAdapter adapter = new MySqlDataAdapter(comando);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
@@ -123,7 +123,7 @@ namespace SharedEmpresa
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
             cboCargo.DataSource = obterdados("select * from cargo");
             cboCargo.ValueMember = "codigoCargo";
             cboCargo.DisplayMember = "cargo";
@@ -137,7 +137,7 @@ namespace SharedEmpresa
             {
                 string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                 conexao = new MySqlConnection(data_source);
-                string sql = "update usuario set nome=@nome,email=@email,senha=@senha,cargo=@cargo where codigo=@codigo";
+                string sql = "update usuario set nome=@nome,email=@email,senha=@senha,cargo=@cargo where codidgo=@codigo";
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
                 string senha = txtSenha.Text.Trim();
                 string senhahash = BCrypt.Net.BCrypt.HashPassword(senha);
@@ -175,7 +175,7 @@ namespace SharedEmpresa
                     var confirmacao = MessageBox.Show("Tem certeza que deseja excluir este usuário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (confirmacao == DialogResult.No)
                     {
-                        return;
+                        return; 
                     }
                     string data_source = "datasource=localhost; username=root; password=''; database='projeto' ";
                     conexao = new MySqlConnection(data_source);
@@ -243,15 +243,8 @@ namespace SharedEmpresa
 
         private void cboCargo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cboCargo.SelectedItem is DataRowView row)
-            {
-                idCargo = Convert.ToInt32(row["codigoCargo"]);
-            }
-        }
+            idCargo = Convert.ToInt32(((DataRowView)cboCargo.SelectedItem)["codigoCargo"]);
 
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-            LimparCampos();
         }
     }
 }

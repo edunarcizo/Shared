@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedido));
             dataGridView1 = new DataGridView();
             lblNome = new Label();
             lblDescricao = new Label();
@@ -37,7 +38,11 @@
             btnAdicionar = new Button();
             btnVerCarrinho = new Button();
             lblIdProduto = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
@@ -45,61 +50,66 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Location = new Point(14, 110);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(703, 245);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(803, 327);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lblNome
             // 
             lblNome.AutoSize = true;
-            lblNome.Location = new Point(34, 271);
+            lblNome.Location = new Point(14, 453);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(43, 15);
+            lblNome.Size = new Size(53, 20);
             lblNome.TabIndex = 1;
             lblNome.Text = "Nome:";
             // 
             // lblDescricao
             // 
             lblDescricao.AutoSize = true;
-            lblDescricao.Location = new Point(34, 311);
+            lblDescricao.Location = new Point(14, 492);
             lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(61, 15);
+            lblDescricao.Size = new Size(77, 20);
             lblDescricao.TabIndex = 2;
             lblDescricao.Text = "Descrição:";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
-            lblValor.Location = new Point(34, 351);
+            lblValor.Location = new Point(14, 529);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(40, 15);
+            lblValor.Size = new Size(49, 20);
             lblValor.TabIndex = 3;
             lblValor.Text = "Preço:";
             // 
             // txtQuantidade
             // 
-            txtQuantidade.Location = new Point(127, 391);
+            txtQuantidade.Location = new Point(120, 569);
+            txtQuantidade.Margin = new Padding(3, 4, 3, 4);
             txtQuantidade.Name = "txtQuantidade";
-            txtQuantidade.Size = new Size(100, 23);
+            txtQuantidade.Size = new Size(114, 27);
             txtQuantidade.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 391);
+            label1.Location = new Point(14, 569);
             label1.Name = "label1";
-            label1.Size = new Size(72, 15);
+            label1.Size = new Size(90, 20);
             label1.TabIndex = 5;
             label1.Text = "Quantidade:";
             // 
             // btnAdicionar
             // 
-            btnAdicionar.Location = new Point(582, 391);
+            btnAdicionar.Location = new Point(682, 556);
+            btnAdicionar.Margin = new Padding(3, 4, 3, 4);
             btnAdicionar.Name = "btnAdicionar";
-            btnAdicionar.Size = new Size(75, 23);
+            btnAdicionar.Size = new Size(86, 31);
             btnAdicionar.TabIndex = 6;
             btnAdicionar.Text = "Adicionar";
             btnAdicionar.UseVisualStyleBackColor = true;
@@ -107,9 +117,10 @@
             // 
             // btnVerCarrinho
             // 
-            btnVerCarrinho.Location = new Point(696, 391);
+            btnVerCarrinho.Location = new Point(812, 556);
+            btnVerCarrinho.Margin = new Padding(3, 4, 3, 4);
             btnVerCarrinho.Name = "btnVerCarrinho";
-            btnVerCarrinho.Size = new Size(79, 23);
+            btnVerCarrinho.Size = new Size(90, 31);
             btnVerCarrinho.TabIndex = 7;
             btnVerCarrinho.Text = "Ver carrinho";
             btnVerCarrinho.UseVisualStyleBackColor = true;
@@ -118,18 +129,41 @@
             // lblIdProduto
             // 
             lblIdProduto.AutoSize = true;
-            lblIdProduto.Location = new Point(731, 27);
+            lblIdProduto.Location = new Point(839, 110);
             lblIdProduto.Name = "lblIdProduto";
-            lblIdProduto.Size = new Size(38, 15);
+            lblIdProduto.Size = new Size(50, 20);
             lblIdProduto.TabIndex = 8;
             lblIdProduto.Text = "label2";
             lblIdProduto.Visible = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.MediumBlue;
+            pictureBox2.Location = new Point(-3, -9);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(988, 116);
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox3.Location = new Point(369, -9);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(183, 116);
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
+            // 
             // Pedido
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Violet;
+            ClientSize = new Size(914, 600);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
             Controls.Add(lblIdProduto);
             Controls.Add(btnVerCarrinho);
             Controls.Add(btnAdicionar);
@@ -139,10 +173,13 @@
             Controls.Add(lblDescricao);
             Controls.Add(lblNome);
             Controls.Add(dataGridView1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Pedido";
             Text = "Pedido";
             Load += Pedido_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -158,5 +195,7 @@
         private Button btnAdicionar;
         private Button btnVerCarrinho;
         private Label lblIdProduto;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
